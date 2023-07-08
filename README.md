@@ -1,4 +1,4 @@
-# react-big-calendar
+# react-big-calendar(Jalaali Calendar Support)
 
 An events calendar component built for React and made for modern browsers (read: not IE) and uses flexbox over the classic tables-caption approach.
 
