@@ -214,17 +214,23 @@ export default function (moment) {
     return data ? data.firstDayOfWeek() : 0
   }
 
-  function firstVisibleDay(date) {
-    return moment(date).startOf('month').startOf('week').toDate()
+  function firstVisibleDay(date, isJalaali) {
+    return moment(date)
+      .startOf(isJalaali ? 'jMonth' : 'month')
+      .startOf('week')
+      .toDate()
   }
 
-  function lastVisibleDay(date) {
-    return moment(date).endOf('month').endOf('week').toDate()
+  function lastVisibleDay(date, isJalaali) {
+    return moment(date)
+      .endOf(isJalaali ? 'jMonth' : 'month')
+      .endOf('week')
+      .toDate()
   }
 
-  function visibleDays(date) {
-    let current = firstVisibleDay(date)
-    const last = lastVisibleDay(date)
+  function visibleDays(date, isJalaali) {
+    let current = firstVisibleDay(date, isJalaali)
+    const last = lastVisibleDay(date, isJalaali)
     const days = []
 
     while (lte(current, last)) {

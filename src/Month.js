@@ -77,7 +77,7 @@ class MonthView extends React.Component {
 
   render() {
     let { date, localizer, className } = this.props,
-      month = localizer.visibleDays(date, localizer),
+      month = localizer.visibleDays(date, this.props.useJalaali || localizer),
       weeks = chunk(month, 7)
 
     this._weekCount = weeks.length
@@ -111,6 +111,7 @@ class MonthView extends React.Component {
       accessors,
       getters,
       showAllEvents,
+      useJalaali,
     } = this.props
 
     const { needLimitMeasure, rowLimit } = this.state
@@ -154,6 +155,7 @@ class MonthView extends React.Component {
         rtl={this.props.rtl}
         resizable={this.props.resizable}
         showAllEvents={showAllEvents}
+        useJalaali={useJalaali}
       />
     )
   }
@@ -408,6 +410,7 @@ MonthView.propTypes = {
       y: PropTypes.number,
     }),
   ]),
+  useJalaali: PropTypes.bool,
 }
 
 MonthView.range = (date, { localizer }) => {

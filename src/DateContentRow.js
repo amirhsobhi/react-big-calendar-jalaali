@@ -123,6 +123,7 @@ class DateContentRow extends React.Component {
       isAllDay,
       resizable,
       showAllEvents,
+      useJalaali,
     } = this.props
 
     if (renderForMeasure) return this.renderDummy()
@@ -166,6 +167,7 @@ class DateContentRow extends React.Component {
           components={components}
           longPressThreshold={longPressThreshold}
           resourceId={resourceId}
+          useJalaali={useJalaali}
         />
 
         <div
@@ -236,6 +238,7 @@ DateContentRow.propTypes = {
 
   minRows: PropTypes.number.isRequired,
   maxRows: PropTypes.number.isRequired,
+  useJalaali: PropTypes.bool,
 }
 
 DateContentRow.defaultProps = {
