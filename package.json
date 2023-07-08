@@ -3,12 +3,12 @@
   "version": "1.8.1",
   "description": "Calendar! with events",
   "author": {
-    "name": "Jason Quense",
-    "email": "monastic.panic@gmail.com"
+    "name": "Amir Hossein Sobhi",
+    "email": "a.sobhi@yahoo.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jquense/react-big-calendar.git"
+    "url": "git+https://github.com/amirhsobhi/react-big-calendar-jalaali.git"
   },
   "publishConfig": {
     "access": "public",
@@ -128,7 +128,7 @@
     "uncontrollable": "^7.2.1"
   },
   "bugs": {
-    "url": "https://github.com/jquense/react-big-calendar/issues"
+    "url": "https://github.com/amirhsobhi/react-big-calendar-jalaali/issues"
   },
-  "homepage": "https://github.com/jquense/react-big-calendar#readme"
+  "homepage": "https://github.com/amirhsobhi/react-big-calendar-jalaali#readme"
 }
