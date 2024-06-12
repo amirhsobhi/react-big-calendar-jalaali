@@ -1,14 +1,14 @@
 {
-  "name": "react-big-calendar-jalaali",
+  "name": "react-big-calendar-shamsi",
   "version": "1.8.2",
   "description": "Calendar! with events",
   "author": {
-    "name": "Amir Hossein Sobhi",
-    "email": "a.sobhi@yahoo.com"
+    "name": "Faraz Mehraien",
+    "email": "farazmehraien@yahoo.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amirhsobhi/react-big-calendar-jalaali.git"
+    "url": "git+https://github.com/Faraz1995/react-big-calendar-jalaali.git"
   },
   "publishConfig": {
     "access": "public",
